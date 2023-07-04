@@ -19,7 +19,6 @@
 \usepackage{url}
 \usepackage{parskip} 	
 
-\RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
@@ -34,9 +33,13 @@
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage[unicode, draft=false]{hyperref}
-\usepackage{fontawesome5} %social icons
+\usepackage{color} %colors
     \definecolor{custom}{rgb}{0,0.2,0.6}
-    \hypersetup{colorlinks,breaklinks,urlcolor=custom,linkcolor=custom}
+    \definecolor{back}{rgb}{0.85, 0.89, 0.95}
+    \definecolor{fore}{rgb}{0.56, 0.67, 0.86}
+\usepackage{hyperref} %hyperlinks
+   \hypersetup{colorlinks=true,allcolors=custom}
+\usepackage{fontawesome5} %social icons
 
 \newcolumntype{C}{>{\centering\arraybackslash}X} % centered version of 'X' col. type
 
@@ -116,14 +119,14 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
     \begin{itemize}[itemsep=0pt,parsep=2pt]
         \item Modélisation de partitionnement élémentaire et fractionnement isotopique par les processus magmatiques
         \item Développement de modèles de diffusion, percolation-diffusion, fusion de sources mixtes \& en système ouvert
-        \item Utilisation \& développement de modèles thermomécaniques de transport réactif, modélisation thermodynamique (pMELTS, Melt-PX)
+        \item Utilisation \& développement de modèles thermo-mécaniques de transport réactif, modélisation thermodynamique (pMELTS, Melt-PX)
         \item Langages de programmation: Matlab, Python (Numpy, Matplotlib, Pandas), Visual Basic (VBA), HTML, développement du package de visualisation de données \textit{Geoch’Em} pour Excel
     \end{itemize}
     
     \textbf{Géologie de terrain}
     \begin{itemize}[itemsep=0pt,parsep=2pt]
         \item Pétrologie magmatique et métamorphique en terrain mafique et ultramafique
-        \item Expériences de terrain : Pyrénées, Galice, Espagne, Italie, République Tchèque, Californie, Australie
+        \item Expériences de terrain : Pyrénées, Galice, sud de l'Espagne, Italie, République Tchèque, Californie, Australie
         \item Analyse microstructurale, échantillonnage et cartographie
     \end{itemize}
 
@@ -132,14 +135,14 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
 
     \textbf{Crédits de recherche en tant que PI \textit{\say{Proyectos de generación de conocimiento}}}
     \hfill {Sept. 2022}\\
-    \say{\textit{mOdelling arC rEcycling in the oceanic mAntle using radiogeNic iSotope systems (OCEANS)}}\\
+    \say{\textit{M\underline{o}delling ar\underline{c} r\underline{e}cycling in the oceanic m\underline{a}ntle using radioge\underline{n}ic i\underline{s}otope systems}} (OCEANS)\\
     Ministère espagnol des Sciences, de l'Innovation et des Universités 45 k€ (2 ans)
     
-    \textbf{Financement postdoctoral \textit{Juan de la Cierva (Incorporación)}}
+    \textbf{Financement post-doctoral \textit{Juan de la Cierva (Incorporación)}}
     \hfill {Août 2021}\\
     Ministère espagnol des Sciences, de l'Innovation et des Universités (3 ans)
     
-    \textbf{Financement postdoctoral \textit{Juan de la Cierva (Formación)}}
+    \textbf{Financement post-doctoral \textit{Juan de la Cierva (Formación)}}
     \hfill {Déc. 2019}\\
     Ministère espagnol des Sciences, de l'Innovation et des Universités (2 ans)
     
@@ -193,7 +196,7 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
 \textbf{Enseignement}, Macquarie University
 \hfill {2014-2019}
     \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
-        \item Niveau Master : modélisation du comportement des éléments traces during les processus magmatiques 
+        \item Niveau Master : modélisation du comportement des éléments traces durant les processus magmatiques 
         \item Niveau Licence : terrain de géologie structurale et métamorphique (Hill End, Nouvelles-Galles du Sud)
     \end{itemize}
 
