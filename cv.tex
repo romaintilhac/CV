@@ -14,6 +14,7 @@
 % {Fontin.otf}
 \documentclass[a4paper,11pt]{article}
 \usepackage[francais]{babel}
+\AtBeginDocument{\def\labelitemi{$\bullet$}}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{url}
@@ -68,7 +69,7 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
 % RESEARCH INTERESTS
 \section{Thèmes de recherche}
 
-    {Mes recherches portent sur l’évolution et la dynamique du manteau terrestre par une approche qui combine méthodes analytiques et modélisation de la mobilité élémentaire et du fractionnement isotopique associés à la formation et à la migration des magmas. Je travaille notamment sur la formation et le recyclage des pyroxénites et leurs conséquences sur la genèse des basaltes océaniques et les grands cycles géochimiques.}
+    {Mes recherche portent sur la genèse et la migration des magmas et les interactions magma-roche et leurs rôles de dans l'évolution et la dynamique du manteau terrestre. Mon approche combine une large gamme de méthodes analytiques et de modèles numériques visant à développer une vision pétrologiquement cohérente de textit{géochimie computationelle}. Je travaille notamment sur la formation et le recyclage des pyroxénites en tant qu'hétérogénéités dans le manteau convectif et leur impact sur la genèse des basaltes océaniques et les grands cycles géochimiques.}
     
 % EDUCATION
 \section{Cursus universitaire}
@@ -108,25 +109,25 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
 
     \textbf{Techniques analytiques} 
     \begin{itemize}[itemsep=0pt,parsep=2pt]
-        \item Pétrographie et minéralogie (microscopie optique, MEB, thermo-barométrie, micro-thermométrie)
+        \item Pétrographie magmatique et minéralogie (microscopie optique, MEB, thermo-barométrie, micro-thermométrie)
         \item Séparation minérale (désagrégation Selfrag, magnétique, liqueurs denses, piquage)
         \item Chimie par voie humide (digestion acide et en tubes Carius, chromatographie par colonne, extraction Re-Os par solvant et micro-distillation, dilution isotopique)
-        \item Géochimie élémentaire (analyse en solution/\textit{in situ} des éléments majeurs et traces par microsonde électronique et solution/ablation laser ICP-MS)
-        \item Géochimie isotopique et géochronologie (analyse des isotopes radiogéniques Rb-Sr, Sm-Nd, Lu-Hf et Re-Os par TIMS et multi-collecteur [MC]-ICP-MS, datation U-Pb/Lu-Hf sur zircon par LA-[MC]-ICP-MS)
+        \item Géochimie élémentaire (analyse en solution/\textit{in situ} et cartographie des éléments majeurs \& traces par EPMA, [LA]-ICP-MS)
+        \item Géochimie isotopique et géochronologie (analyse des isotopes radiogéniques Rb-Sr, Sm-Nd, Lu-Hf \& Re-Os par TIMS (Triton) et MC-ICP-MS (Nu Plasma, Neptune), U-Pb/Lu-Hf sur zircon par LA-[MC]-ICP-MS)
     \end{itemize}
     
     \textbf{Modélisation numérique et traitement de données}
     \begin{itemize}[itemsep=0pt,parsep=2pt]
         \item Modélisation de partitionnement élémentaire et fractionnement isotopique par les processus magmatiques
         \item Développement de modèles de diffusion, percolation-diffusion, fusion de sources mixtes \& en système ouvert
-        \item Utilisation \& développement de modèles thermo-mécaniques de transport réactif, modélisation thermodynamique (pMELTS, Melt-PX)
-        \item Langages de programmation: Matlab, Python (Numpy, Matplotlib, Pandas), Visual Basic (VBA), HTML, développement du package de visualisation de données \textit{Geoch’Em} pour Excel
+        \item Modèles thermo-mécaniques de transport réactif, modélisation thermodynamique (pMELTS, PerpleX, Melt-PX)
+        \item Langages de programmation: Matlab, Python, VBA, Julia, Fortran, HTML
     \end{itemize}
     
     \textbf{Géologie de terrain}
     \begin{itemize}[itemsep=0pt,parsep=2pt]
         \item Pétrologie magmatique et métamorphique en terrain mafique et ultramafique
-        \item Expériences de terrain : Pyrénées, Galice, sud de l'Espagne, Italie, République Tchèque, Californie, Australie
+        \item Expériences de terrain : Pyrénées, Galice, sud de l'Espagne, Italie, République Tchèque, Californie, Australie, Terre-Neuve
         \item Analyse microstructurale, échantillonnage et cartographie
     \end{itemize}
 
@@ -155,7 +156,7 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
     Macquarie University (Sydney)
     
     \textbf{Bourse doctorale d’excellence iMQRES}
-    \hfill {Fév. 2012}\\
+    \hfill {Févr. 2012}\\
     International Macquarie Research Excellence Scholarship (3,5 ans)
 
 % OTHER ACTIVITIES
@@ -163,14 +164,16 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
 
     \textbf{Séminaires \& présentations invités}
     \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
-        \item Université Goethe de Francfort
-            \hfill \textit{Francfort}, {Janvier 2023}
+        \item Université Goethe de Francfort (\textit{Geosciences colloquium series})
+            \hfill \textit{Francfort}, {Janv. 2023}
+        \item CNRS Forsterite workshop 2021 (Modélisation des transferts manteau-croûte)
+            \hfill \textit{Pyrénées}, {Oct. 2021}
         \item International Symposium DEEP 2021
             \hfill \textit{Nanjing}, {Oct. 2021}
         \item Université de Tokyo
-            \hfill \textit{Tokyo}, {Mars 2019}
-        \item Geoanalysis 2018
-            \hfill \textit{Sydney}, {Juillet 2018}
+            \hfill \textit{Tokyo}, {Mar. 2019}
+        \item Geoanalysis 2018 workshop (Application du LA-[MC]-ICP-MS à l'exploration)
+            \hfill \textit{Sydney}, {Juill. 2018}
     \end{itemize}
 
     \textbf{Organisation de sessions à la Goldschmidt Conference}\\
@@ -178,8 +181,8 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
     \say{\textit{Mantle heterogeneity: origins and contribution to magmatism and implications for mantle dynamics}} \hfill {2021} \\
     \say{\textit{Development and recycling of chemical and isotopic heterogeneities in the sub-arc mantle}} \hfill {2020}
     
-    \textbf{Reviewer fréquent pour des revues scientifiques internationales (23 reviews)}\\
-      Geology, Journal of Petrology, Earth-Science Reviews, Chemical Geology, Scientific Reports, Geological Society of London Special Publications, Lithos, European Journal of Mineralogy, American Journal of Science, Frontiers in Earth Science, Ofioliti, Minerals
+    \textbf{Reviewer fréquent pour des revues scientifiques internationales (24 reviews)}\\
+    Geology, J. of Petrology, Earth-Science Reviews, Chemical Geology, Scientific Reports, GSL Special Publications, Lithos, European J. of Mineralogy, EMU Notes in Mineralogy, American J. of Science, Frontiers, Ofioliti
 
 % SUPERVISION & TEACHING
 \section{Encadrement \& enseignement}
@@ -204,16 +207,13 @@ Géochimiste $|$ Chercheur post-doctorant (IACT/CSIC, Grenade)\\[7.5pt]
 \section{Formations complémentaires}
 
     \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
-        \item Fugacité d’oxygène : théorie et pratiques en géosciences
-        \item Analyses et techniques géochimiques
-        \item Frontières de recherche en géophysique et géodynamique
+        \item Cartographie LA-ICP-MS : applications en pétrologie \& volcanologie (M. Petrelli, C. Stremtan, M. Šala)
+        \item Fugacité d’oxygène : théorie et pratiques en géosciences (C.A. McCammon, H.St.C. O’Neill, D.J. Frost)
+        \item Analyses et techniques géochimiques (N.J. Pearson)
+        \item Frontières de recherche en géophysique et géodynamique (C.J. O’Neil)
     \end{itemize}
     
-% LANGUAGES
-\section{Langues}
-
-Français, Anglais, Espagnol
-
+\vfill  
 \center{\footnotesize Mis à jour: 5 janvier 2023}
 
 \end{document}
